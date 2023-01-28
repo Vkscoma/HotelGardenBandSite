@@ -18,7 +18,7 @@ html {
 
   /* secondary colors */
   --main-dark-blue: #0b132b;
-  --secondar-blue: #131725;
+  --secondar-blue: #10131f;
   --secondary-light-grey: #3a506b;
   --accent-teal: #5bc0be;
   --accent-teal-light: #6fffe9;
@@ -40,7 +40,7 @@ body {
 
 .header-container {
   padding: 0;
-  background: var(--dark-color);
+  background: var(--secondar-blue);
 }
 
 .nav-container {
@@ -204,7 +204,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--main-color-shade);
+    background-color: var(--secondary-light-grey);
     padding: 10px;
     position: fixed;
     top: 0;
