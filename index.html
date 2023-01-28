@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Pico CSS-->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <title>Hotel Garden Band</title>
+  </head>
+
+  <body>
+    <header class="header-container" id="home">
+      <div class="fixed-header-bar">
+        <h1 class="mobile-h1">HOTEL GARDEN</h1>
+        <!-- Mobile Toggle -->
+        <span class="hamburger nav-toggle" aria-label="toggel navigation">
+          <i class="fa-solid fa-bars" id="hamburger"></i>
+          <i class="fa-solid fa-x" id="x-icon" style="display: none"></i>
+        </span>
+      </div>
+      <nav class="container nav-container">
+        <ul class="mobile-nav-container">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#music">Music</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#shows">Shows</a></li>
+          <li><a class="nav__link" href="#form">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="main-section-container">
+      <h2 class="main-title">HOTEL GARDEN</h2>
+      <div class="main--section-image"></div>
+    </section>
+
+    <section class="container music-section-container" id="music">
+      <h2 class="music-title">MUSIC</h2>
+      <iframe
+        src="https://open.spotify.com/embed/artist/33YRDb38CEI0aA2TS5csdx"
+        width="300"
+        height="380"
+        frameborder="0"
+        allowtransparency="true"
+        allow="encrypted-media"
+      ></iframe>
+    </section>
+
+    <section class="container about-section-container" id="about">
+      <h2 class="about-title">ABOUT US</h2>
+      <div class="about-us-content">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptatum, quod, quia, voluptas quae voluptatem quibusdam
+          exercitationem voluptates quos quas nesciunt. Quisquam, quae. Quisquam
+          voluptatum, quod, quia, voluptas quae voluptatem quibusdam
+          exercitationem voluptates quos quas nesciunt. Quisquam, quae.
+        </p>
+      </div>
+    </section>
+
+    <section class="container shows-section" id="shows">
+      <h2 class="shows-title">UPCOMING SHOWS</h2>
+      <div class="shows-container">
+        <article class="article-class">Show Date</article>
+        <article class="article-class">Show Date</article>
+        <article class="article-class">Show Date</article>
+      </div>
+    </section>
+
+    <section class="container" id="form">
+      <form>
+        <!-- Grid -->
+        <div class="grid">
+          <!-- Markup example 1: input is inside label -->
+          <label for="name">
+            Name
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </label>
+        </div>
+
+        <!-- Markup example 2: input is after label -->
+        <label for="email">Email address</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Email address"
+          required
+        />
+        <small>We'll never share your email with anyone else.</small>
+
+        <!-- Button -->
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <footer class="footer-container">
+      <nav class="footer-nav">
+        <ul>
+          <li class="footer__item">
+            <a
+              class="footer-link social-list__item"
+              href="http://instagram.com/_u/hotelgardenband?igshid=YmMyMTA2M2Y="
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer-link social-list__item" href="#"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer-link social-list__item" href="#"
+              ><i class="fa-brands fa-apple"></i
+            ></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer-link social-list__item" href="#"
+              ><i class="fa-brands fa-bandcamp"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="band__footer-container">
+        <p class="credits"><a href="#home">Hotel Garden</a></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
