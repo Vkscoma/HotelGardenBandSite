@@ -11,15 +11,16 @@ html {
 :root {
   --main-color: #ffc8dd;
   --main-color-shade: #ffafcc;
-  --secondary-color: #ffafcc;
+  --secondary-color: #de487f;
   --tertiary-color: #bde0fe;
   --quaternary-color: #a2d2ff;
   --purple-color: #cdb4db;
 
   /* secondary colors */
   --main-dark-blue: #0b132b;
-  --secondar-blue: #10131f;
-  --secondary-light-grey: #3a506b;
+  --secondary-blue: #10131f;
+  --secondary-light-grey: #29394d;
+  --third-dark-grey: #141c26;
   --accent-teal: #5bc0be;
   --accent-teal-light: #6fffe9;
 
@@ -40,7 +41,7 @@ body {
 
 .header-container {
   padding: 0;
-  background: var(--secondar-blue);
+  background: var(--third-dark-grey);
 }
 
 .nav-container {
@@ -129,6 +130,8 @@ body {
 }
 
 .article-class {
+  background-color: var(--secondary-light-grey);
+  color: var(--light-color);
   text-align: center;
 }
 
@@ -165,7 +168,7 @@ body {
 
 /* footer */
 .footer-container {
-  background: var(--dark-color);
+  background: var(--third-dark-grey);
   padding: 0;
 }
 
@@ -212,7 +215,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-light-grey);
+    background-color: var(--third-dark-grey);
     padding: 10px;
     position: fixed;
     top: 0;
@@ -224,6 +227,11 @@ body {
   .mobile-h1 {
     margin: 0;
     font-size: 1.5rem;
+    color: var(--light-color);
+  }
+
+  .mobile-h1 a {
+    text-decoration: none;
     color: var(--light-color);
   }
 
@@ -252,7 +260,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--secondar-blue);
+    background-color: var(--secondary-light-grey);
     transform: translateY(-100%);
     transition: transform 0.3s ease-in;
   }
