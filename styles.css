@@ -165,6 +165,7 @@ body {
 /* footer */
 .footer-container {
   background: var(--dark-color);
+  padding: 0;
 }
 
 .footer-nav {
