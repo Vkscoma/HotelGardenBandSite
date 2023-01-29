@@ -26,6 +26,8 @@ navLinks.forEach((link) => {
   });
 });
 
+// Animation JS
+
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
