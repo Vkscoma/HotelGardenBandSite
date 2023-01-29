@@ -3,6 +3,7 @@ const navToggle = document.querySelector(".nav-toggle");
 const hamburgerIcon = document.getElementById("hamburger");
 const xIcon = document.getElementById("x-icon");
 const navLinks = document.querySelectorAll(".nav__link");
+const hiddenElements = document.querySelectorAll(".hidden");
 
 //event listener
 navToggle.addEventListener("click", () => {
@@ -23,4 +24,18 @@ navLinks.forEach((link) => {
     hamburgerIcon.style.display = "block";
     xIcon.style.display = "none";
   });
+});
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
+    }
+  });
+});
+
+hiddenElements.forEach((element) => {
+  observer.observe(element);
 });

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="Pico/pico-master/css/pico.css" />
     <!-- Font Awesome-->
     <link
       rel="stylesheet"
@@ -14,15 +15,12 @@
       referrerpolicy="no-referrer"
     />
     <!-- Pico CSS-->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
-    />
+
     <title>Hotel Garden Band</title>
   </head>
 
   <body>
-    <header class="header-container" id="home">
+    <header class="header-container"">
       <div class="fixed-header-bar">
         <h1 class="mobile-h1"><a href="#home">HOTEL GARDEN</a></h1>
         <!-- Mobile Toggle -->
@@ -42,8 +40,11 @@
       </nav>
     </header>
 
-    <section class="main-section-container">
-      <h2 class="main-title">HOTEL GARDEN</h2>
+    <section class="main-section-container" id="home">
+      <h2 class="main-title hidden">
+        HOTEL <br />
+        GARDEN
+      </h2>
       <div class="main--section-image"></div>
     </section>
 
@@ -63,8 +64,9 @@
 
     <section class="container about-section-container" id="about">
       <h2 class="about-title">ABOUT US</h2>
-      <div class="about-us-content">
-        <p>
+      <div class="grid about-us-content hidden">
+        <img src="images/2022-10-15_18_34_23.489.jpg" alt="band_photo" class="about-us-image">
+        <p class="hidden">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           voluptatum, quod, quia, voluptas quae voluptatem quibusdam
           exercitationem voluptates quos quas nesciunt. Quisquam, quae. Quisquam
@@ -77,9 +79,35 @@
     <section class="container shows-section" id="shows">
       <h2 class="shows-title">UPCOMING SHOWS</h2>
       <div class="shows-container">
-        <article class="article-class">Show Date</article>
-        <article class="article-class">Show Date</article>
-        <article class="article-class">Show Date</article>
+        <!-- <article class="article-class hidden">
+          February 25th, 2023 @7PM, <a href="#">Cafe Colonial</a>
+        </article>
+        <article class="article-class hidden">Show Date</article>
+        <article class="article-class hidden">Show Date</article> -->
+
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Bands</th>
+              <th scope="col">Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="hidden">Saturday, Feb 25 @ 7:00PM</td>
+              <td class="hidden">The Me Gustas / Clevers / Hotel Garden</td>
+              <td class="hidden">
+                <a href="https://www.cafecolonial916.com/"> Cafe Colonial </a>
+              </td>
+            </tr>
+            <tr>
+              <td class="hidden">TBA</td>
+              <td class="hidden">TBA</td>
+              <td class="hidden">TBA</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -121,7 +149,7 @@
           required
         ></textarea>
         <!-- Button -->
-        <button type="submit">Submit</button>
+        <button class="btn" type="submit">Submit</button>
       </form>
     </section>
 
