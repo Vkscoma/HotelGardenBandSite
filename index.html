@@ -50,6 +50,7 @@
 
     <section class="container music-section-container" id="music">
       <h2 class="music-title">MUSIC</h2>
+
       <iframe
         style="border-radius: 12px"
         src="https://open.spotify.com/embed/artist/33YRDb38CEI0aA2TS5csdx?utm_source=generator&theme=0"
@@ -60,6 +61,23 @@
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
       ></iframe>
+
+      <div class="music-container gradient-border">
+        <h3 class="music-list-title">Listen + Download</h3>
+        <ul class="music-list">
+          <li>
+            <a
+              href="https://open.spotify.com/artist/33YRDb38CEI0aA2TS5csdx?si=1uYMovQbQpG7uSgqTJB5-g"
+              ><i class="fa-brands fa-spotify"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://music.apple.com/us/artist/hotel-garden/1648459007"
+              ><i class="fa-brands fa-apple"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section class="container about-section-container" id="about">
@@ -116,7 +134,7 @@
     </section>
 
     <section class="container" id="form">
-      <form>
+      <form id="my-form" action="https://formspree.io/f/xoqbjjkk" method="POST">
         <h2 class="form-title">CONTACT US</h2>
         <!-- Grid -->
         <div class="grid">
@@ -153,7 +171,8 @@
           required
         ></textarea>
         <!-- Button -->
-        <button class="btn" type="submit">Submit</button>
+        <button class="btn" type="submit" id="my-form-button">Submit</button>
+        <p id="my-form-status"></p>
       </form>
     </section>
 
@@ -164,21 +183,21 @@
             <a
               class="footer-link social-list__item"
               href="http://instagram.com/_u/hotelgardenband?igshid=YmMyMTA2M2Y="
-              ><i class="fa-brands fa-instagram"></i
+              ><i class="fa-brands fa-instagram footer-icon"></i
             ></a>
           </li>
           <li class="footer__item">
             <a
               class="footer-link social-list__item"
               href="https://open.spotify.com/artist/33YRDb38CEI0aA2TS5csdx?si=1uYMovQbQpG7uSgqTJB5-g"
-              ><i class="fa-brands fa-spotify"></i
+              ><i class="fa-brands fa-spotify footer-icon"></i
             ></a>
           </li>
           <li class="footer__item">
             <a
               class="footer-link social-list__item"
               href="https://music.apple.com/us/artist/hotel-garden/1648459007"
-              ><i class="fa-brands fa-apple"></i
+              ><i class="fa-brands fa-apple footer-icon"></i
             ></a>
           </li>
         </ul>

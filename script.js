@@ -32,8 +32,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
     }
   });
 });
@@ -41,3 +39,42 @@ const observer = new IntersectionObserver((entries) => {
 hiddenElements.forEach((element) => {
   observer.observe(element);
 });
+
+//Form JS
+const form = document.getElementById("my-form");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  const status = document.getElementById("my-form-status");
+  let data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      if (response.ok) {
+        status.innerHTML = "Thanks for your submission!";
+        status.classList.add("success");
+        form.reset();
+      } else {
+        response.json().then((data) => {
+          if (Object.hasOwn(data, "errors")) {
+            status.innerHTML = data["errors"];
+            status.classList
+              .add("error")
+              .map((error) => error["message"])
+              .join(", ");
+          } else {
+            status.innerHTML = "Oops! There was a problem submitting your form";
+          }
+        });
+      }
+    })
+    .catch((error) => {
+      status.innerHTML = "Oops! There was a problem submitting your form";
+    });
+}
+form.addEventListener("submit", handleSubmit);

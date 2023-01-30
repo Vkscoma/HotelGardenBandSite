@@ -87,7 +87,7 @@ body > header > nav > ul {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .main-title {
@@ -102,10 +102,70 @@ body > header > nav > ul {
 }
 
 /* Music Section */
+
 .music-section-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.gradient-border {
+  padding: 1em;
+  width: 100%;
+  max-width: 500px;
+  border-style: solid;
+  border-width: 10px;
+  border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+}
+
+.music-list-title {
+  margin-bottom: 0;
+}
+
+.music-list {
+  display: flex;
+  margin-top: 1em;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  padding: 0;
+}
+
+.music-list li {
+  list-style: none;
+}
+
+.music-list li a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.fa-spotify {
+  color: #1db954;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-spotify:hover {
+  color: #c2cad7;
+}
+
+.fa-apple {
+  color: #f94c57;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-apple:hover {
+  color: #c2cad7;
 }
 
 /* About Us Styling */
@@ -163,6 +223,18 @@ body > header > nav > ul {
   width: 200px;
 }
 
+#my-form-status {
+  text-align: center;
+}
+
+.success {
+  color: #4caf50;
+}
+
+.error {
+  color: #f44336;
+}
+
 /* footer */
 .footer-container {
   background: var(--secondary-light-grey);
@@ -173,13 +245,14 @@ body > header > nav > ul {
   justify-content: center;
 }
 
-.footer-nav a {
+.footer-icon {
   color: var(--light-color);
   font-size: 2rem;
   font-weight: 600;
+  transition: all 0.2s ease-in-out;
 }
 
-.footer-nav a:hover {
+.footer-icon:hover {
   color: var(--main-color);
 }
 
@@ -350,6 +423,11 @@ body > header > nav > ul {
 
   .about-us-content {
     text-align: center;
+  }
+
+  /* music section mobile */
+  .music-list li a {
+    font-size: 4rem;
   }
 
   .shows-title {
