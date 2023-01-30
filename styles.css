@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -28,16 +28,20 @@ html {
   /* dark and light colors */
   --dark-color: rgb(15, 15, 15);
   --light-color: #f3f4f6;
+
+  /* font family */
+  --main-font: "Poppins", sans-serif;
+  --secondary-font: "Kumbh Sans", sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--main-font);
   margin: 0;
-  overflow-x: hidden;
 }
 
 /* hide mobile header */
-.fixed-header-bar {
+.fixed-header-bar,
+.false-mobile-header {
   display: none;
 }
 
@@ -68,29 +72,33 @@ body > header > nav > ul {
 /* main content */
 
 .main-section-container {
-  margin-bottom: 0;
-}
-
-.main--section-image {
   background-image: url(images/IMG_5483.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
+  padding-top: 250px;
+  padding-bottom: 250px;
   position: relative;
-  bottom: 180px;
+  isolation: isolate;
+}
+
+.main-section-container::after {
+  content: "";
+  position: absolute;
   z-index: -1;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .main-title {
-  font-family: "Mukta", sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
+  font-family: var(--secondary-font);
+  font-size: 4.5rem;
+  font-weight: 700;
   color: var(--light-color);
   text-shadow: 0 0 10px #000;
   text-align: center;
   margin: 0;
+  animation: moveBandLogo 800ms ease-in-out;
 }
 
 /* Music Section */
@@ -218,6 +226,18 @@ body > header > nav > ul {
   transition-delay: 400ms;
 }
 
+/* Band Logo Animation */
+@keyframes moveBandLogo {
+  0% {
+    transform: translateY(-200%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media (prefers-reduced-motion) {
   .hidden {
     transition: none;
@@ -227,6 +247,12 @@ body > header > nav > ul {
 /* Media Queries */
 @media screen and (max-width: 768px) {
   /* header */
+  .false-mobile-header {
+    display: block;
+    padding: 1px;
+    background-color: var(--secondary-light-grey);
+  }
+
   .fixed-header-bar {
     display: flex;
     justify-content: center;
@@ -299,17 +325,18 @@ body > header > nav > ul {
 
   /* main content */
   .main-section-container {
+    background-image: url(images/IMG_8649.jpg);
     margin-top: 3em;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
+
   .main-title {
     font-size: 3.5rem;
     font-weight: 700;
     padding: 20px;
-  }
-
-  .main--section-image {
-    background-image: url(images/IMG_8649.jpg);
-    bottom: 200px;
+    position: relative;
+    bottom: 195px;
   }
 
   .about-title {
