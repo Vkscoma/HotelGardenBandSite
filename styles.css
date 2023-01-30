@@ -404,6 +404,10 @@ body > header > nav > ul {
     padding-top: 200px;
     padding-bottom: 200px;
   }
+  
+  .main-section-container::after {
+    background: rgba(0, 0, 0, 0.2);
+  }
 
   .main-title {
     font-size: 3.5rem;
