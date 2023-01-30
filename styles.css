@@ -296,7 +296,15 @@ body > header > nav > ul {
   transition-delay: 200ms;
 }
 .about-us-custom:nth-child(3) {
-  transition-delay: 400ms;
+  transition-delay: 600ms;
+}
+
+/* Music Section Transitions */
+.music-custom:nth-child(2) {
+  transition-delay: 200ms;
+}
+.music-custom:nth-child(3) {
+  transition-delay: 600ms;
 }
 
 /* Band Logo Animation */
@@ -404,7 +412,7 @@ body > header > nav > ul {
     padding-top: 200px;
     padding-bottom: 200px;
   }
-  
+
   .main-section-container::after {
     background: rgba(0, 0, 0, 0.2);
   }

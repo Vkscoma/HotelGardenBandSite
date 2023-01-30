@@ -52,6 +52,7 @@
       <h2 class="music-title">MUSIC</h2>
 
       <iframe
+        class="hidden music-custom"
         style="border-radius: 12px"
         src="https://open.spotify.com/embed/artist/33YRDb38CEI0aA2TS5csdx?utm_source=generator&theme=0"
         width="100%"
@@ -62,7 +63,7 @@
         loading="lazy"
       ></iframe>
 
-      <div class="music-container gradient-border">
+      <div class="music-container gradient-border hidden music-custom">
         <h3 class="music-list-title">Listen + Download</h3>
         <ul class="music-list">
           <li>
@@ -101,12 +102,6 @@
     <section class="container shows-section" id="shows">
       <h2 class="shows-title">UPCOMING SHOWS</h2>
       <div class="shows-container">
-        <!-- <article class="article-class hidden">
-          February 25th, 2023 @7PM, <a href="#">Cafe Colonial</a>
-        </article>
-        <article class="article-class hidden">Show Date</article>
-        <article class="article-class hidden">Show Date</article> -->
-
         <table class="hidden">
           <thead>
             <tr>
@@ -134,8 +129,8 @@
     </section>
 
     <section class="container" id="form">
+      <h2 class="form-title">CONTACT US</h2>
       <form id="my-form" action="https://formspree.io/f/xoqbjjkk" method="POST">
-        <h2 class="form-title">CONTACT US</h2>
         <!-- Grid -->
         <div class="grid">
           <!-- Markup example 1: input is inside label -->
