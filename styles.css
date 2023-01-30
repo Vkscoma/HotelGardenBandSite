@@ -98,7 +98,7 @@ body > header > nav > ul {
   text-shadow: 0 0 10px #000;
   text-align: center;
   margin: 0;
-  animation: moveBandLogo 800ms ease-in-out;
+  animation: moveBandLogo 1500ms ease-in-out;
 }
 
 /* Music Section */
@@ -146,7 +146,7 @@ body > header > nav > ul {
 
 .music-list li a {
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
