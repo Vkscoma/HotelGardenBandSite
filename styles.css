@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding: 5rem;
 }
 
 :root {
@@ -39,8 +40,7 @@ body {
 }
 
 /* hide mobile header */
-.fixed-header-bar,
-.false-mobile-header {
+.fixed-header-bar {
   display: none;
 }
 
@@ -370,12 +370,6 @@ body > header > nav > ul {
 }
 @media screen and (max-width: 768px) {
   /* header */
-  .false-mobile-header {
-    display: block;
-    padding: 1px;
-    background-color: var(--secondary-light-grey);
-  }
-
   .fixed-header-bar {
     display: flex;
     justify-content: center;
