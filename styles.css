@@ -70,6 +70,15 @@ body > header > nav > ul {
   color: var(--main-color);
 }
 
+.nav-icon-class {
+  color: var(--light-color);
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-icon-class:hover {
+  color: var(--main-color);
+}
+
 /* main content */
 
 .main-section-container {
@@ -162,21 +171,21 @@ body > header > nav > ul {
   font-weight: 600;
 }
 
-.fa-spotify {
+.music-icon-spotify {
   color: #1db954;
   transition: all 0.2s ease-in-out;
 }
 
-.fa-spotify:hover {
+.music-icon-spotify:hover {
   color: #c2cad7;
 }
 
-.fa-apple {
+.music-icon-apple {
   color: #f94c57;
   transition: all 0.2s ease-in-out;
 }
 
-.fa-apple:hover {
+.music-icon-apple:hover {
   color: #c2cad7;
 }
 
