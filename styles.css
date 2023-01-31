@@ -10,8 +10,9 @@ html {
 }
 
 :root {
-  --main-color: #d81b60;
-  --main-color-accent: #ff6a99;
+  --main-color: #49c4e6;
+  --main-color-accent: #3dbcdd;
+  --main-hover-color: #c2cad7;
 
   /* secondary colors */
   --main-dark-blue: #2f4858;
@@ -141,7 +142,23 @@ body > header > nav > ul {
   max-width: 500px;
   border-style: solid;
   border-width: 10px;
-  border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1;
+  /* border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1; */
+  border-image: linear-gradient(
+      to right,
+      #49c4e6,
+      #40bcde,
+      #36b5d6,
+      #2badcf,
+      #1ea6c7,
+      #16a1c4,
+      #0c9cc0,
+      #0097bd,
+      #0094bd,
+      #0090bc,
+      #008dbc,
+      #0089bb
+    )
+    1;
 }
 
 .music-list-title {
@@ -168,22 +185,13 @@ body > header > nav > ul {
   font-weight: 600;
 }
 
-.music-icon-spotify {
-  color: #1db954;
+.music-icon {
+  color: var(--main-color);
   transition: all 0.2s ease-in-out;
 }
 
-.music-icon-spotify:hover {
-  color: #c2cad7;
-}
-
-.music-icon-apple {
-  color: #f94c57;
-  transition: all 0.2s ease-in-out;
-}
-
-.music-icon-apple:hover {
-  color: #c2cad7;
+.music-icon:hover {
+  color: var(--main-hover-color);
 }
 
 /* About Us Styling */
@@ -210,10 +218,10 @@ body > header > nav > ul {
   text-align: center;
 }
 
-.article-class {
-  background-color: var(--secondary-light-grey);
-  color: var(--light-color);
-  text-align: center;
+.venue-location-link a {
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
 }
 
 /* Contact Section */
@@ -246,6 +254,10 @@ body > header > nav > ul {
   font-size: 1rem;
   font-weight: 600;
   width: 200px;
+}
+
+.btn:hover {
+  background-color: var(--main-hover-color);
 }
 
 #my-form-status {

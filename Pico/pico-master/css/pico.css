@@ -215,9 +215,9 @@ kbd {
   --h6-color: #4d606d;
   --muted-color: hsl(205deg, 10%, 50%);
   --muted-border-color: hsl(205deg, 20%, 94%);
-  --primary: #d81b60;
-  --primary-hover: #c2185b;
-  --primary-focus: rgba(216, 27, 96, 0.125);
+  --primary: #009cbd;
+  --primary-hover: #49c4e6;
+  --primary-focus: #007595;
   --primary-inverse: #fff;
   --secondary: hsl(205deg, 15%, 41%);
   --secondary-hover: hsl(205deg, 20%, 32%);
@@ -320,9 +320,9 @@ kbd {
     --h6-color: #afbbc4;
     --muted-color: hsl(205deg, 10%, 50%);
     --muted-border-color: #1f2d38;
-    --primary: #d81b60;
-    --primary-hover: #ff6a99;
-    --primary-focus: rgba(216, 27, 96, 0.25);
+    --primary: #009cbd;
+    --primary-hover: #49c4e6;
+    --primary-focus: #007595;
     --primary-inverse: #fff;
     --secondary: hsl(205deg, 15%, 41%);
     --secondary-hover: hsl(205deg, 10%, 50%);
