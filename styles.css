@@ -117,6 +117,10 @@ body > header > nav > ul {
   margin-top: 2em;
 }
 
+.music-title {
+  margin-bottom: 0.5em;
+}
+
 .iframe-class {
   border: none;
   width: 100%;
