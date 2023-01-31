@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 
 * {
   box-sizing: border-box;
@@ -30,7 +31,7 @@ html {
   --light-color: #f3f4f6;
 
   /* font family */
-  --main-font: "Poppins", sans-serif;
+  --main-font: "Varela", sans-serif;
   --secondary-font: "Kumbh Sans", sans-serif;
 }
 
@@ -385,6 +386,7 @@ body > header > nav > ul {
 
   .mobile-h1 {
     margin: 0;
+    font-family: var(--secondary-font);
     font-size: 1.5rem;
     color: var(--light-color);
   }
