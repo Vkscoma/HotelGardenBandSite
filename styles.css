@@ -87,7 +87,7 @@ body > header > nav > ul {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .main-title {
@@ -425,7 +425,7 @@ body > header > nav > ul {
 
   /* main content */
   .main-section-container {
-    background-image: url(images/IMG_8649.jpg);
+    background-image: url(images/MobileBandPhoto.jpg);
     margin-top: 3em;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -440,7 +440,7 @@ body > header > nav > ul {
     font-weight: 700;
     padding: 20px;
     position: relative;
-    bottom: 195px;
+    bottom: 205px;
   }
 
   .about-title {
@@ -454,7 +454,7 @@ body > header > nav > ul {
   /* music section mobile */
   .iframe-class {
     width: 100%;
-    height: 100%;
+    height: 200px;
   }
 
   .music-list li a {
