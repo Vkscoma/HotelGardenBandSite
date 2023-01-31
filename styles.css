@@ -346,6 +346,8 @@ body > header > nav > ul {
 }
 
 /* Media Queries */
+@media screen and (max-width: 680px) {
+}
 @media screen and (max-width: 768px) {
   /* header */
   .false-mobile-header {
@@ -405,8 +407,8 @@ body > header > nav > ul {
     left: 0;
     width: 100%;
     background-color: var(--third-dark-grey);
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in;
+    transform: translateY(-150%);
+    transition: transform 0.4s ease-in;
     z-index: 100;
   }
 
