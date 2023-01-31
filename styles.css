@@ -20,13 +20,14 @@ html {
   /* secondary colors */
   --main-dark-blue: #0b132b;
   --secondary-blue: #10131f;
-  --secondary-light-grey: #171a28;
+  --secondary-light-grey: #141622;
   --third-dark-grey: #14142e;
   --accent-teal: #5bc0be;
   --accent-teal-light: #6fffe9;
 
   /* dark and light colors */
   --dark-color: rgb(15, 15, 15);
+  --transparent-dark-color: rgba(5, 5, 5, 0.97);
   --light-color: #f3f4f6;
 
   /* font family */
@@ -47,7 +48,7 @@ body {
 
 .header-container {
   padding: 0;
-  background: var(--secondary-light-grey);
+  background: var(--dark-color);
 }
 
 .nav-container {
@@ -406,7 +407,7 @@ body > header > nav > ul {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: var(--third-dark-grey);
+    background-color: var(--transparent-dark-color);
     transform: translateY(-150%);
     transition: transform 0.4s ease-in;
     z-index: 100;
@@ -424,7 +425,6 @@ body > header > nav > ul {
 
   .nav-container a {
     font-size: 2rem;
-    margin: 10px;
   }
 
   /* main content */
