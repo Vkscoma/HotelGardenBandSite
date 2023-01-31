@@ -191,6 +191,8 @@ body > header > nav > ul {
 }
 
 .about-us-text {
+  display: grid;
+  place-content: center;
   text-align: left;
 }
 
