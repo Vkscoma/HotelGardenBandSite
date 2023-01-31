@@ -26,7 +26,7 @@ html {
   --accent-teal-light: #6fffe9;
 
   /* dark and light colors */
-  --dark-color: rgb(15, 15, 15);
+  --dark-color: #000;
   --transparent-dark-color: rgba(5, 5, 5, 0.97);
   --light-color: #f3f4f6;
 
