@@ -190,6 +190,10 @@ body > header > nav > ul {
   border-radius: 10px;
 }
 
+.about-us-text {
+  text-align: left;
+}
+
 /* Show Section */
 .shows-title {
   font-size: 2rem;
