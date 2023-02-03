@@ -145,8 +145,13 @@ body > header > nav > ul {
   max-width: 750px;
   border-style: solid;
   border-width: 10px;
-  /* border-image: conic-gradient(red, yellow, lime, aqua, blue, magenta, red) 1; */
   border-image: linear-gradient(
+      0deg,
+      rgba(73, 196, 230, 1) 0%,
+      rgba(44, 100, 232, 1) 100%
+    )
+    1;
+  /* border-image: linear-gradient(
       to right,
       #49c4e6,
       #40bcde,
@@ -161,7 +166,7 @@ body > header > nav > ul {
       #008dbc,
       #0089bb
     )
-    1;
+    1; */
 }
 
 .music-list-title {
