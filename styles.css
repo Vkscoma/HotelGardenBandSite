@@ -15,6 +15,8 @@ html {
   --main-color: #49c4e6;
   --main-color-accent: #3dbcdd;
   --main-hover-color: #c2cad7;
+  --transparent-main-color: rgba(0, 0, 0, 0.3);
+  --transparent-lighter-color: rgba(0, 162, 255, 0.1);
 
   /* secondary colors */
   --main-dark-blue: #2f4858;
@@ -96,7 +98,7 @@ body > header > nav > ul {
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: var(--transparent-main-color);
 }
 
 .main-title {
@@ -220,10 +222,14 @@ body > header > nav > ul {
   text-align: center;
 }
 
-.venue-location-link a {
-  text-decoration: none;
-  font-weight: 600;
+.event-row {
   transition: all 0.2s ease-in-out;
+  height: 120px;
+}
+
+.event-row:hover {
+  cursor: pointer;
+  background-color: var(--transparent-lighter-color);
 }
 
 /* Contact Section */

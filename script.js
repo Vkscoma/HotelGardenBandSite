@@ -78,3 +78,14 @@ async function handleSubmit(event) {
     });
 }
 form.addEventListener("submit", handleSubmit);
+
+// JS for event page
+const eventRow = document.querySelectorAll(".event-row");
+
+eventRow.forEach((row) => {
+  row.addEventListener("click", () => {
+    if (row.dataset.href) {
+      document.location.href = row.dataset.href;
+    }
+  });
+});
