@@ -20,14 +20,14 @@ html {
 
   /* secondary colors */
   --main-dark-blue: #2f4858;
-  --secondary-light-grey: #141622;
+  --secondary-light-grey: #334a52;
   --third-dark-grey: #14142e;
   --accent-teal: #5bc0be;
   --accent-teal-light: #6fffe9;
 
   /* dark and light colors */
   --dark-color: #000;
-  --dark-grey: #101010;
+  --dark-grey: #121212;
   --dark-grey-variant: #1f1f1f;
   --transparent-dark-color: rgba(5, 5, 5, 0.97);
   --light-color: #f3f4f6;
@@ -91,6 +91,7 @@ body > header > nav > ul {
   padding-bottom: 250px;
   position: relative;
   isolation: isolate;
+  transition: 1s;
 }
 
 .main-section-container::after {
@@ -109,7 +110,8 @@ body > header > nav > ul {
   text-shadow: 0 0 10px #000;
   text-align: center;
   margin: 0;
-  animation: moveBandLogo 1600ms ease-in-out;
+  transition: 1s;
+  animation: moveBandLogo 1500ms ease-in;
 }
 
 /* Music Section */
@@ -355,12 +357,10 @@ body > header > nav > ul {
 /* Band Logo Animation */
 @keyframes moveBandLogo {
   0% {
-    transform: translateY(-200%);
     filter: blur(5px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0);
     filter: blur(0);
     opacity: 1;
   }
