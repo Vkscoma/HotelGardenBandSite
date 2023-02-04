@@ -16,6 +16,7 @@ html {
   --main-color-accent: #3dbcdd;
   --main-hover-color: #c2cad7;
   --transparent-main-color: rgba(0, 0, 0, 0.3);
+  --transparent-darker-color: rgba(0, 0, 0, 0.74);
   --transparent-lighter-color: rgba(0, 162, 255, 0.1);
 
   /* secondary colors */
@@ -84,7 +85,7 @@ body > header > nav > ul {
 
 .main-section-container {
   background-image: url(images/IMG_5483.jpg);
-  background-size: cover;
+  background-size: 120%;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 250px;
@@ -144,7 +145,7 @@ body > header > nav > ul {
 .gradient-border {
   padding: 1em;
   width: 100%;
-  max-width: 550px;
+  max-width: 750px;
   border-style: solid;
   border-width: 10px;
   border-image: linear-gradient(270deg, #49c4e6, #b95dd7 50%, #ffb367 100%) 1;
@@ -201,10 +202,30 @@ body > header > nav > ul {
 }
 
 /* About Us Styling */
+.about-section-container {
+  background-image: url(images/2022-10-15_18_34_23.489.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 250px;
+  padding-bottom: 250px;
+  filter: grayscale(100%);
+  margin-bottom: 2em;
+}
+
+.about-us-content {
+  margin: 0 auto;
+  max-width: 650px;
+  background-color: var(--transparent-darker-color);
+  padding: 1em;
+}
+
 .about-title {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  color: #e1e6eb;
 }
 
 .about-us-image {
@@ -215,6 +236,8 @@ body > header > nav > ul {
   display: grid;
   place-content: center;
   text-align: left;
+  margin: 0;
+  color: hsl(205deg, 16%, 77%);
 }
 
 /* Show Section */
@@ -343,7 +366,7 @@ body > header > nav > ul {
   transition-delay: 200ms;
 }
 .about-us-custom:nth-child(3) {
-  transition-delay: 600ms;
+  transition-delay: 400ms;
 }
 
 /* Music Section Transitions */
