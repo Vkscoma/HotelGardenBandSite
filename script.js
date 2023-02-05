@@ -12,15 +12,18 @@ navToggle.addEventListener("click", () => {
   if (xIcon.style.display === "none") {
     hamburgerIcon.style.display = "none";
     xIcon.style.display = "block";
+    document.body.classList.add("fixed-position");
   } else {
     hamburgerIcon.style.display = "block";
     xIcon.style.display = "none";
+    document.body.classList.remove("fixed-position");
   }
 });
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     document.body.classList.remove("nav-open");
+    document.body.classList.remove("fixed-position");
     hamburgerIcon.style.display = "block";
     xIcon.style.display = "none";
   });
@@ -32,6 +35,8 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
+    } else {
+      entry.target.classList.remove("show");
     }
   });
 });
@@ -87,5 +92,20 @@ eventRow.forEach((row) => {
     if (row.dataset.href) {
       window.open(row.dataset.href);
     }
+  });
+});
+
+// JS for Article Photos
+// Select each article elements
+const articles = document.querySelectorAll(".article");
+
+// Loop through each article and add an animation when hovered
+articles.forEach(function (article) {
+  article.addEventListener("mouseenter", function () {
+    article.style.transform = "scale(1.2)";
+    article.style.zIndex = "5";
+  });
+  article.addEventListener("mouseleave", function () {
+    article.style.transform = "scale(1)";
   });
 });

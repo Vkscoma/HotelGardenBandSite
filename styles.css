@@ -22,6 +22,7 @@ html {
   /* secondary colors */
   --main-dark-blue: #2f4858;
   --secondary-light-grey: #334a52;
+  --material-dark-color: #121212;
   --third-dark-grey: #14142e;
   --accent-teal: #5bc0be;
   --accent-teal-light: #6fffe9;
@@ -41,6 +42,10 @@ html {
 body {
   font-family: var(--main-font);
   margin: 0;
+}
+
+.fixed-position {
+  position: fixed;
 }
 
 /* hide mobile header */
@@ -212,27 +217,11 @@ body > header > nav > ul {
   padding-bottom: 250px;
 }
 
-.about-title,
-.about-us-text {
-  margin: 20px 15%;
-}
-
 .about-us-content {
   margin: 0 auto;
   max-width: 750px;
   padding: 1em;
 }
-
-/* .about-us-content::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-} */
 
 .about-title {
   font-size: 2rem;
@@ -252,6 +241,21 @@ body > header > nav > ul {
   margin: 0;
   background-color: var(--transparent-darker-color);
   color: hsl(205deg, 16%, 77%);
+}
+
+.article {
+  transition: 250ms;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+article:nth-child(1) > img {
+  height: 100%;
+}
+
+.article > img {
+  border-radius: 5px;
 }
 
 /* Show Section */
@@ -321,7 +325,7 @@ body > header > nav > ul {
 
 /* footer */
 .footer-container {
-  background: var(--secondary-light-grey);
+  background: var(--material-dark-color);
   padding: 0;
 }
 
@@ -376,19 +380,30 @@ body > header > nav > ul {
   transform: translateX(0);
 }
 
-.about-us-custom:nth-child(2) {
+.about-us-custom:nth-child(1) {
   transition-delay: 200ms;
 }
-.about-us-custom:nth-child(3) {
+.about-us-custom:nth-child(2) {
   transition-delay: 400ms;
 }
 
 /* Music Section Transitions */
-.music-custom:nth-child(2) {
+.music-custom:nth-child(1) {
   transition-delay: 200ms;
 }
-.music-custom:nth-child(3) {
+.music-custom:nth-child(2) {
   transition-delay: 600ms;
+}
+
+/* Article Animation */
+.article:nth-child(2) {
+  transition-delay: 200ms;
+}
+.article:nth-child(3) {
+  transition-delay: 600ms;
+}
+.article:nth-child(4) {
+  transition-delay: 800ms;
 }
 
 /* Band Logo Animation */
@@ -410,15 +425,13 @@ body > header > nav > ul {
 }
 
 /* Media Queries */
-@media screen and (max-width: 680px) {
-}
 @media screen and (max-width: 768px) {
   /* header */
   .fixed-header-bar {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--secondary-light-grey);
+    background-color: var(--material-dark-color);
     padding: 10px;
     position: fixed;
     top: 0;
