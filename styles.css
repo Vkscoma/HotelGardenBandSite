@@ -85,7 +85,7 @@ body > header > nav > ul {
 
 .main-section-container {
   background-image: url(images/IMG_5483.jpg);
-  background-size: 120%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 250px;
@@ -208,17 +208,37 @@ body > header > nav > ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 250px;
-  padding-bottom: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   filter: grayscale(100%);
-  margin-bottom: 2em;
+}
+
+.about-title,
+.about-us-text {
+  position: relative;
+  z-index: 1;
+  margin: 20px 15%;
 }
 
 .about-us-content {
+  position: relative;
   margin: 0 auto;
-  max-width: 650px;
-  background-color: var(--transparent-darker-color);
+  max-width: 750px;
   padding: 1em;
+}
+
+.about-us-content::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
 }
 
 .about-title {
@@ -237,6 +257,7 @@ body > header > nav > ul {
   place-content: center;
   text-align: left;
   margin: 0;
+  background-color: var(--transparent-darker-color);
   color: hsl(205deg, 16%, 77%);
 }
 
