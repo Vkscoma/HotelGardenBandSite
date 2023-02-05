@@ -204,34 +204,26 @@ body > header > nav > ul {
 /* About Us Styling */
 .about-section-container {
   background-image: url(images/2022-10-15_18_34_23.489.jpg);
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   filter: grayscale(100%);
+  padding-top: 250px;
+  padding-bottom: 250px;
 }
 
 .about-title,
 .about-us-text {
-  position: relative;
-  z-index: 1;
   margin: 20px 15%;
 }
 
 .about-us-content {
-  position: relative;
   margin: 0 auto;
   max-width: 750px;
   padding: 1em;
 }
 
-.about-us-content::before {
+/* .about-us-content::before {
   content: "";
   display: block;
   position: absolute;
@@ -240,7 +232,7 @@ body > header > nav > ul {
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-}
+} */
 
 .about-title {
   font-size: 2rem;
