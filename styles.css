@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Varela&display=swap");
 
 * {
@@ -22,8 +21,8 @@ html {
   /* secondary colors */
   --main-dark-blue: #2f4858;
   --secondary-light-grey: #334a52;
-  --material-dark-color: #121212;
-  --third-dark-grey: #14142e;
+  --material-dark-color: #282a36;
+  --third-dark-grey: #121212;
   --accent-teal: #5bc0be;
   --accent-teal-light: #6fffe9;
 
@@ -36,7 +35,7 @@ html {
 
   /* font family */
   --main-font: "Varela", sans-serif;
-  --secondary-font: "Kumbh Sans", sans-serif;
+  --secondary-font: "Montserrat", sans-serif;
 }
 
 body {
@@ -44,8 +43,8 @@ body {
   margin: 0;
 }
 
-.fixed-position {
-  position: fixed;
+.hide-overflow {
+  overflow-y: hidden;
 }
 
 /* hide mobile header */
@@ -121,7 +120,6 @@ body > header > nav > ul {
 }
 
 /* Music Section */
-
 .music-section-container {
   display: flex;
   flex-direction: column;
@@ -150,7 +148,7 @@ body > header > nav > ul {
 .gradient-border {
   padding: 1em;
   width: 100%;
-  max-width: 750px;
+  max-width: 450px;
   border-style: solid;
   border-width: 10px;
   border-image: linear-gradient(270deg, #49c4e6, #b95dd7 50%, #ffb367 100%) 1;
@@ -202,60 +200,16 @@ body > header > nav > ul {
   transition: all 0.2s ease-in-out;
 }
 
+.music-icon-spotify {
+  color: #1db954;
+}
+
+.music-icon-apple {
+  color: #fc3c44;
+}
+
 .music-icon:hover {
   color: var(--main-hover-color);
-}
-
-/* About Us Styling */
-.about-section-container {
-  background-image: url(images/2022-10-15_18_34_23.489.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: grayscale(100%);
-  padding-top: 250px;
-  padding-bottom: 250px;
-}
-
-.about-us-content {
-  margin: 0 auto;
-  max-width: 750px;
-  padding: 1em;
-}
-
-.about-title {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-  color: #e1e6eb;
-}
-
-.about-us-image {
-  border-radius: 10px;
-}
-
-.about-us-text {
-  display: grid;
-  place-content: center;
-  text-align: left;
-  margin: 0;
-  background-color: var(--transparent-darker-color);
-  color: hsl(205deg, 16%, 77%);
-}
-
-.article {
-  transition: 250ms;
-  cursor: pointer;
-  border-radius: 5px;
-  background-color: #fff;
-}
-
-article:nth-child(1) > img {
-  height: 100%;
-}
-
-.article > img {
-  border-radius: 5px;
 }
 
 /* Show Section */
@@ -273,6 +227,48 @@ article:nth-child(1) > img {
 .event-row:hover {
   cursor: pointer;
   background-color: var(--transparent-lighter-color);
+}
+
+/* About Us Styling */
+#about > div {
+  margin: 0 auto;
+}
+
+.about-us-img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.about-us-content {
+  display: grid;
+  place-content: center;
+  margin: 0 auto;
+  max-width: 750px;
+  padding: 1em;
+}
+
+.about-title {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.mobile-about-title {
+  display: none;
+}
+
+.about-us-image {
+  border-radius: 10px;
+}
+
+.about-us-text {
+  font-size: 1.2rem;
+  /* display: grid;
+  place-content: center;
+  text-align: left;
+  margin: 0; */
+  /* background-color: var(--transparent-darker-color);
+  color: hsl(205deg, 16%, 77%); */
 }
 
 /* Contact Section */
@@ -380,31 +376,16 @@ article:nth-child(1) > img {
   transform: translateX(0);
 }
 
-.about-us-custom:nth-child(1) {
-  transition-delay: 200ms;
-}
 .about-us-custom:nth-child(2) {
-  transition-delay: 400ms;
+  transition-delay: 200ms;
 }
 
 /* Music Section Transitions */
-.music-custom:nth-child(1) {
-  transition-delay: 200ms;
-}
 .music-custom:nth-child(2) {
-  transition-delay: 600ms;
+  transition-delay: 200ms;
 }
 
 /* Article Animation */
-.article:nth-child(2) {
-  transition-delay: 200ms;
-}
-.article:nth-child(3) {
-  transition-delay: 600ms;
-}
-.article:nth-child(4) {
-  transition-delay: 800ms;
-}
 
 /* Band Logo Animation */
 @keyframes moveBandLogo {
@@ -518,12 +499,33 @@ article:nth-child(1) > img {
     bottom: 205px;
   }
 
-  .about-title {
-    font-size: 2rem;
+  /* about section */
+  .about-section-container {
+    background: url(images/2022-10-15_18_34_23.489.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 190px;
+    padding-bottom: 190px;
+    filter: grayscale(100%);
   }
 
-  .about-us-image {
-    margin-bottom: 2em;
+  .about-us-img {
+    display: none;
+  }
+
+  .about-title {
+    display: none;
+  }
+
+  .mobile-about-title {
+    display: block;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-us-text {
+    background-color: rgba(0, 0, 0, 0.8);
   }
 
   /* music section mobile */

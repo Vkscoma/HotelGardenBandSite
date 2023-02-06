@@ -12,18 +12,18 @@ navToggle.addEventListener("click", () => {
   if (xIcon.style.display === "none") {
     hamburgerIcon.style.display = "none";
     xIcon.style.display = "block";
-    document.body.classList.add("fixed-position");
+    document.body.classList.add("hide-overflow");
   } else {
     hamburgerIcon.style.display = "block";
     xIcon.style.display = "none";
-    document.body.classList.remove("fixed-position");
+    document.body.classList.remove("hide-overflow");
   }
 });
 
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     document.body.classList.remove("nav-open");
-    document.body.classList.remove("fixed-position");
+    document.body.classList.remove("hide-overflow");
     hamburgerIcon.style.display = "block";
     xIcon.style.display = "none";
   });
@@ -35,8 +35,6 @@ const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       entry.target.classList.add("show");
-    } else {
-      entry.target.classList.remove("show");
     }
   });
 });
