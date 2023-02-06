@@ -365,14 +365,14 @@ body > header > nav > ul {
   transform: translateX(0);
 }
 
-.about-us-custom:nth-child(2) {
+/* .about-us-custom:nth-child(2) {
   transition-delay: 200ms;
-}
+} */
 
 /* Music Section Transitions */
-.music-custom:nth-child(2) {
+/* .music-custom:nth-child(2) {
   transition-delay: 200ms;
-}
+} */
 
 /* Article Animation */
 
