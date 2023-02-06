@@ -262,12 +262,6 @@ body > header > nav > ul {
 
 .about-us-text {
   font-size: 1.2rem;
-  /* display: grid;
-  place-content: center;
-  text-align: left;
-  margin: 0; */
-  /* background-color: var(--transparent-darker-color);
-  color: hsl(205deg, 16%, 77%); */
 }
 
 /* Contact Section */
@@ -509,6 +503,14 @@ body > header > nav > ul {
     filter: grayscale(100%);
   }
 
+  .about-section-container::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+  }
+
   .about-us-img {
     display: none;
   }
@@ -521,10 +523,11 @@ body > header > nav > ul {
     display: block;
     font-size: 2rem;
     text-align: center;
+    color: hsl(205deg, 16%, 77%);
   }
 
   .about-us-text {
-    background-color: rgba(0, 0, 0, 0.8);
+    color: hsl(205deg, 16%, 77%);
   }
 
   /* music section mobile */
