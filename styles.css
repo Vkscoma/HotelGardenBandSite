@@ -296,10 +296,6 @@ body > header > nav > ul {
   width: 200px;
 }
 
-.btn:hover {
-  background-color: var(--main-hover-color);
-}
-
 #my-form-status {
   text-align: center;
 }

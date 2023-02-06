@@ -215,9 +215,9 @@ kbd {
   --h6-color: #4d606d;
   --muted-color: hsl(205deg, 10%, 50%);
   --muted-border-color: hsl(205deg, 20%, 94%);
-  --primary: hsl(195deg, 85%, 41%);
-  --primary-hover: hsl(195deg, 90%, 32%);
-  --primary-focus: rgba(16, 149, 193, 0.125);
+  --primary: #3949ab;
+  --primary-hover: #303f9f;
+  --primary-focus: rgba(57, 73, 171, 0.125);
   --primary-inverse: #fff;
   --secondary: hsl(205deg, 15%, 41%);
   --secondary-hover: hsl(205deg, 20%, 32%);
@@ -320,9 +320,9 @@ kbd {
     --h6-color: #afbbc4;
     --muted-color: hsl(205deg, 10%, 50%);
     --muted-border-color: #1f2d38;
-    --primary: hsl(195deg, 85%, 41%);
-    --primary-hover: hsl(195deg, 80%, 50%);
-    --primary-focus: rgba(16, 149, 193, 0.25);
+    --primary: #3949ab;
+    --primary-hover: #3f51b5;
+    --primary-focus: rgba(57, 73, 171, 0.25);
     --primary-inverse: #fff;
     --secondary: hsl(205deg, 15%, 41%);
     --secondary-hover: hsl(205deg, 10%, 50%);
@@ -426,9 +426,9 @@ kbd {
   --h6-color: #afbbc4;
   --muted-color: hsl(205deg, 10%, 50%);
   --muted-border-color: #1f2d38;
-  --primary: hsl(195deg, 85%, 41%);
-  --primary-hover: hsl(195deg, 80%, 50%);
-  --primary-focus: rgba(16, 149, 193, 0.25);
+  --primary: #3949ab;
+  --primary-hover: #3f51b5;
+  --primary-focus: rgba(57, 73, 171, 0.25);
   --primary-inverse: #fff;
   --secondary: hsl(205deg, 15%, 41%);
   --secondary-hover: hsl(205deg, 10%, 50%);
