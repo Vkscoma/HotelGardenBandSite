@@ -139,10 +139,9 @@ body > header > nav > ul {
 }
 
 .iframe-class {
-  border: none;
+  border-radius: 10px;
   width: 100%;
-  max-width: 750px;
-  height: 500px;
+  height: 725px;
 }
 
 .gradient-border {
