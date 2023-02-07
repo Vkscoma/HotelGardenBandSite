@@ -499,6 +499,8 @@ body > header > nav > ul {
   }
 
   .main-title {
+    display: flex;
+    justify-content: center;
     font-size: 3.5rem;
     font-weight: 700;
     padding: 20px;
