@@ -92,6 +92,7 @@ body>header>nav>ul {
   height: 100vh;
   overflow: hidden;
   transition: 1s;
+  z-index: 1;
 }
 
 .hero-image.mobile {
