@@ -45,6 +45,7 @@ hiddenElements.forEach((element) => {
 
 //Form JS
 const form = document.getElementById("my-form");
+const honeyPot = document.getElementById("honeypot");
 
 async function handleSubmit(event) {
   event.preventDefault();
@@ -58,11 +59,11 @@ async function handleSubmit(event) {
     },
   })
     .then((response) => {
-      if (response.ok) {
+      if (response.ok && honeyPot.value === "") {
         status.innerHTML = "Thanks for your submission!";
         status.classList.add("success");
         form.reset();
-      } else {
+      } else if (honeyPot.value !== "") {
         response.json().then((data) => {
           if (Object.hasOwn(data, "errors")) {
             status.innerHTML = data["errors"];

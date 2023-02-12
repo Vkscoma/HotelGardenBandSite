@@ -7,6 +7,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <link rel="stylesheet" href="styles.css" />
   <!-- Font Awesome-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -164,7 +165,13 @@
       <!-- textbox -->
       <label for="message">Message</label>
       <textarea id="message" name="message" placeholder="Message" required></textarea>
+      <!-- Last Field-->
+      <div style="display:none;">
+        <label for="honeypot">If you fill this field out then your email will not be sent</label>
+        <input type="text" id="honeypot" name="honeypot">
+      </div>
       <!-- Button -->
+      <div class="g-recaptcha" data-sitekey="6LdUbXYkAAAAALTaW7KU5xJW4Soay6RHD223XWlv"></div>
       <button class="btn" type="submit" id="my-form-button">Submit</button>
       <p id="my-form-status"></p>
     </form>
