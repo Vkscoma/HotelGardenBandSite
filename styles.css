@@ -61,7 +61,7 @@ body {
   justify-content: space-evenly;
 }
 
-body > header > nav > ul {
+body>header>nav>ul {
   gap: 3em;
 }
 
@@ -168,8 +168,7 @@ body > header > nav > ul {
   max-width: 450px;
   border-style: solid;
   border-width: 10px;
-  border-image: linear-gradient(
-      to right,
+  border-image: linear-gradient(to right,
       #49c4e6,
       #40bcde,
       #36b5d6,
@@ -181,9 +180,7 @@ body > header > nav > ul {
       #0094bd,
       #0090bc,
       #008dbc,
-      #0089bb
-    )
-    1;
+      #0089bb) 1;
 }
 
 .music-list-title {
@@ -246,7 +243,7 @@ body > header > nav > ul {
 }
 
 /* About Us Styling */
-#about > div {
+#about>div {
   margin: 0 auto;
 }
 
@@ -301,6 +298,11 @@ body > header > nav > ul {
   font-weight: 600;
   text-align: center;
   margin: 0.5em;
+}
+
+div.g-recaptcha {
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
@@ -382,23 +384,13 @@ body > header > nav > ul {
   transform: translateX(0);
 }
 
-/* .about-us-custom:nth-child(2) {
-  transition-delay: 200ms;
-} */
-
-/* Music Section Transitions */
-/* .music-custom:nth-child(2) {
-  transition-delay: 200ms;
-} */
-
-/* Article Animation */
-
 /* Band Logo Animation */
 @keyframes moveBandLogo {
   0% {
     filter: blur(5px);
     opacity: 0;
   }
+
   100% {
     filter: blur(0);
     opacity: 1;
@@ -413,6 +405,7 @@ body > header > nav > ul {
 
 /* Media Queries */
 @media screen and (max-width: 768px) {
+
   /* header */
   .fixed-header-bar {
     display: flex;
@@ -471,7 +464,7 @@ body > header > nav > ul {
     z-index: 100;
   }
 
-  body > header > nav > ul {
+  body>header>nav>ul {
     gap: 0;
   }
 
