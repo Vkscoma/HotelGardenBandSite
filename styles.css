@@ -44,7 +44,7 @@ body {
 }
 
 .hide-overflow {
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 /* hide mobile header */
