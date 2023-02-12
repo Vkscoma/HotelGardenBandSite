@@ -123,7 +123,7 @@ function swapImage() {
   heroIndex = (heroIndex + 1) % images.length;
 }
 
-let mobileIndex = 1;
+let mobileIndex = 0;
 
 function swapMobileImages() {
   for (let i = 0; i < mobileImages.length; i++) {
