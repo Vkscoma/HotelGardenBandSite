@@ -1,283 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Hotel Garden Band</title>
-    <meta name="description" content="Hotel Garden Band Website" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- Font Awesome-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
-    <!-- Pico CSS-->
-    <link rel="stylesheet" href="Pico-folder/pico-master 2/css/pico.css" />
-  </head>
 
-  <body>
-    <header class="header-container" id="home">
-      <div class="fixed-header-bar">
-        <h1 class="mobile-h1"><a href="#home">HOTEL GARDEN</a></h1>
-        <!-- Mobile Toggle -->
-        <span class="hamburger nav-toggle">
-          <i class="fa-solid fa-bars" id="hamburger"></i>
-          <i class="fa-solid fa-x" id="x-icon" style="display: none"></i>
-        </span>
-      </div>
-      <nav class="nav-container" role="navigation" aria-label="Main">
-        <ul class="mobile-nav-container">
-          <li><a class="nav__link" href="#home">Home</a></li>
-          <li><a class="nav__link" href="#music">Music</a></li>
-          <li><a class="nav__link" href="#shows">Shows</a></li>
-          <li><a class="nav__link" href="#about">About</a></li>
-          <li><a class="nav__link" href="#form">Contact</a></li>
-          <ul aria-label="social media List">
-            <li>
-              <a
-                href="https://www.instagram.com/hotelgardenband/"
-                aria-label="Instagram">
-                <i class="fa-brands fa-instagram nav-icon-class"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.tiktok.com/@hotelgardenband"
-                aria-label="TikTok"
-                ><i class="fa-brands fa-tiktok nav-icon-class"></i>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://open.spotify.com/artist/33YRDb38CEI0aA2TS5csdx?si=1uYMovQbQpG7uSgqTJB5-g"
-                aria-label="Spotify"
-                ><i class="fa-brands fa-spotify nav-icon-class"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://music.apple.com/us/artist/hotel-garden/1648459007"
-                aria-label="Apple Music"
-                ><i class="fa-brands fa-apple nav-icon-class"></i
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UCLW6HCmYLTbe_Je8Q63-PMQ"
-                aria-label="YouTube">
-                <i class="fa-brands fa-youtube nav-icon-class"></i>
-              </a>
-            </li>
-          </ul>
-        </ul>
-      </nav>
-    </header>
+<head>
+  <title>Hotel Garden Band</title>
+  <meta name="description" content="Hotel Garden Band Website" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Font Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Pico CSS-->
+  <link rel="stylesheet" href="PicoMain/pico-master/css/pico.css" />
+</head>
 
-    <!-- Hero Section -->
-    <section id="banner" class="hero-section-container">
-      <div class="hero">
-        <img
-          src="desktop-images/desktopimg-1.jpg"
-          alt="Hero Image 1"
-          class="hero-image active" />
-        <img
-          src="desktop-images/desktopimg-2.jpg"
-          alt="Hero Image 2"
-          class="hero-image" />
-        <img
-          src="desktop-images/desktopimg-3.jpg"
-          alt="Hero Image 3"
-          class="hero-image" />
-        <img
-          src="mobile-images/mobileimg-1.jpg"
-          alt="Hero Image 1"
-          class="hero-image active mobile" />
-        <img
-          src="mobile-images/mobileimg-2.jpg"
-          alt="Hero Image 2"
-          class="hero-image mobile" />
-        <img
-          src="mobile-images/mobileimg-3.jpg"
-          alt="Hero Image 3"
-          class="hero-image mobile" />
-        <h1 id="h1" class="main-title">
-          HOTEL <br />
-          GARDEN
-        </h1>
-      </div>
-    </section>
-
-    <section class="container music-section-container" id="music">
-      <h2 class="music-title">MUSIC</h2>
-
-      <iframe
-        class="hidden music-custom iframe-class"
-        src="https://www.youtube.com/embed/sxL474ou0BA"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen></iframe>
-
-      <div class="music-container gradient-border hidden music-custom">
-        <h3 class="music-list-title">Listen / Download</h3>
-        <ul class="music-list">
+<body>
+  <header class="header-container" id="home">
+    <div class="fixed-header-bar">
+      <h1 class="mobile-h1"><a href="#home">HOTEL GARDEN</a></h1>
+      <!-- Mobile Toggle -->
+      <span class="hamburger nav-toggle">
+        <i class="fa-solid fa-bars" id="hamburger"></i>
+        <i class="fa-solid fa-x" id="x-icon" style="display: none"></i>
+      </span>
+    </div>
+    <nav class="nav-container" role="navigation" aria-label="Main">
+      <ul class="mobile-nav-container">
+        <li><a class="nav__link" href="#home">Home</a></li>
+        <li><a class="nav__link" href="#music">Music</a></li>
+        <li><a class="nav__link" href="#shows">Shows</a></li>
+        <li><a class="nav__link" href="#about">About</a></li>
+        <li><a class="nav__link" href="#form">Contact</a></li>
+        <ul aria-label="social media List">
           <li>
-            <a
-              href="https://open.spotify.com/artist/33YRDb38CEI0aA2TS5csdx?si=1uYMovQbQpG7uSgqTJB5-g"
-              aria-label="Spotify"
-              ><i class="fa-brands fa-spotify music-icon-spotify music-icon"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://music.apple.com/us/artist/hotel-garden/1648459007"
-              aria-label="Apple Music"
-              ><i class="fa-brands fa-apple music-icon-apple music-icon"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="container shows-section" id="shows">
-      <h2 class="shows-title">UPCOMING SHOWS</h2>
-      <div class="shows-container">
-        <table class="hidden">
-          <thead>
-            <tr>
-              <th scope="col">Date</th>
-              <th scope="col">Bands</th>
-              <th scope="col">Location</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              class="event-row"
-              data-href="https://www.cafecolonial916.com/calendar">
-              <td>Saturday, Feb 25 @ 7:00PM</td>
-              <td>The Me Gustas / Clevers / Hotel Garden</td>
-              <td>Cafe Colonial, Sacramento, CA</td>
-            </tr>
-            <tr class="event-row">
-              <td>TBA</td>
-              <td>TBA</td>
-              <td>TBA</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2 class="about-us-custom about-title">ABOUT US</h2>
-      <div class="about-section-container grid container">
-        <img
-          src="images/2022-10-15_18_34_23.489.jpg"
-          alt="band photo"
-          class="about-us-img hidden" />
-        <div class="about-us-content about-us-custom hidden">
-          <h2 class="about-us-custom mobile-about-title hidden">ABOUT US</h2>
-          <p class="hidden about-us-custom about-us-text">
-            Hotel Garden is a Sacramento based Indie Rock band that met through
-            a chance encounter on Craigslist. Their musical style draws
-            inspiration from artists such as Peach Pit, Turnover, and The
-            Backseat Lovers. With each show, the band strives to connect with
-            audiences through their music and create a memorable experience.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="container" id="form">
-      <h2 class="form-title">CONTACT US</h2>
-      <form id="my-form" action="https://formspree.io/f/xoqbjjkk" method="POST">
-        <!-- Grid -->
-        <div class="grid">
-          <!-- Markup example 1: input is inside label -->
-          <label for="name">
-            Name
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Name"
-              required />
-          </label>
-        </div>
-
-        <!-- Markup example 2: input is after label -->
-        <label for="email">Email address</label>
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Email address"
-          required />
-
-        <!-- textbox -->
-        <label for="message">Message</label>
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Message"
-          required></textarea>
-        <!-- Button -->
-        <button class="btn" type="submit" id="my-form-button">Submit</button>
-        <p id="my-form-status"></p>
-      </form>
-    </section>
-
-    <footer class="footer-container">
-      <nav class="footer-nav">
-        <ul>
-          <li class="footer__item">
-            <a
-              class="footer-link social-list__item"
-              href="http://instagram.com/_u/hotelgardenband?igshid=YmMyMTA2M2Y="
-              aria-label="Instagram"
-              ><i class="fa-brands fa-instagram footer-icon"></i
-            ></a>
-          </li>
-          <li class="footer__item">
-            <a
-              href="https://www.tiktok.com/@hotelgardenband"
-              aria-label="TikTok"
-              ><i class="fa-brands fa-tiktok footer-icon"></i>
+            <a href="https://www.instagram.com/hotelgardenband/" aria-label="Instagram">
+              <i class="fa-brands fa-instagram nav-icon-class"></i>
             </a>
           </li>
-          <li class="footer__item">
-            <a
-              class="footer-link social-list__item"
-              href="https://open.spotify.com/artist/33YRDb38CEI0aA2TS5csdx?si=1uYMovQbQpG7uSgqTJB5-g"
-              aria-label="Spotify"
-              ><i class="fa-brands fa-spotify footer-icon"></i
-            ></a>
+          <li>
+            <a href="https://www.tiktok.com/@hotelgardenband" aria-label="TikTok"><i
+                class="fa-brands fa-tiktok nav-icon-class"></i>
+            </a>
           </li>
-          <li class="footer__item">
-            <a
-              class="footer-link social-list__item"
-              href="https://music.apple.com/us/artist/hotel-garden/1648459007"
-              aria-label="Apple Music">
-              <i class="fa-brands fa-apple footer-icon"></i
-            ></a>
+          <li>
+            <a href="https://open.spotify.com/artist/33YRDb38CEI0aA2TS5csdx?si=1uYMovQbQpG7uSgqTJB5-g"
+              aria-label="Spotify"><i class="fa-brands fa-spotify nav-icon-class"></i></a>
           </li>
-          <li class="footer__item">
-            <a
-              href="https://www.youtube.com/channel/UCLW6HCmYLTbe_Je8Q63-PMQ"
-              aria-label="YouTube">
-              <i class="fa-brands fa-youtube footer-icon"></i>
+          <li>
+            <a href="https://music.apple.com/us/artist/hotel-garden/1648459007" aria-label="Apple Music"><i
+                class="fa-brands fa-apple nav-icon-class"></i></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UCLW6HCmYLTbe_Je8Q63-PMQ" aria-label="YouTube">
+              <i class="fa-brands fa-youtube nav-icon-class"></i>
             </a>
           </li>
         </ul>
-      </nav>
-      <div class="band__footer-container">
-        <p class="credits"><a href="#home">Hotel Garden</a></p>
-      </div>
-    </footer>
+      </ul>
+    </nav>
+  </header>
 
-    <script src="script.js"></script>
-  </body>
+  <!-- Hero Section -->
+  <section id="banner" class="hero-section-container">
+    <div class="hero">
+      <img src="desktop-images/desktopimg-1.jpg" alt="Hero Image 1" class="hero-image active" />
+      <img src="desktop-images/desktopimg-2.jpg" alt="Hero Image 2" class="hero-image" loading="lazy" />
+      <img src="desktop-images/desktopimg-3.jpg" alt="Hero Image 3" class="hero-image" loading="lazy" />
+      <img src="mobile-images/mobileimg-1.jpg" alt="Hero Image 1" class="hero-image active mobile" />
+      <img src="mobile-images/mobileimg-2.jpg" alt="Hero Image 2" class="hero-image mobile" loading="lazy" />
+      <img src="mobile-images/mobileimg-3.jpg" alt="Hero Image 3" class="hero-image mobile" loading="lazy" />
+      <h1 id="h1" class="main-title">
+        HOTEL <br />
+        GARDEN
+      </h1>
+    </div>
+  </section>
+
+  <section class="container music-section-container" id="music">
+    <h2 class="music-title">MUSIC</h2>
+
+    <iframe loading="lazy" class="hidden music-custom iframe-class" src="https://www.youtube.com/embed/sxL474ou0BA"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+    <div class="music-container gradient-border hidden music-custom">
+      <h3 class="music-list-title">Listen / Download</h3>
+      <ul class="music-list">
+        <li>
+          <a href="https://open.spotify.com/artist/33YRDb38CEI0aA2TS5csdx?si=1uYMovQbQpG7uSgqTJB5-g"
+            aria-label="Spotify"><i class="fa-brands fa-spotify music-icon-spotify music-icon"></i></a>
+        </li>
+        <li>
+          <a href="https://music.apple.com/us/artist/hotel-garden/1648459007" aria-label="Apple Music"><i
+              class="fa-brands fa-apple music-icon-apple music-icon"></i></a>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="container shows-section" id="shows">
+    <h2 class="shows-title">UPCOMING SHOWS</h2>
+    <div class="shows-container">
+      <table class="hidden">
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Bands</th>
+            <th scope="col">Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="event-row" data-href="https://www.cafecolonial916.com/calendar">
+            <td>Saturday, Feb 25 @ 7:00PM</td>
+            <td>The Me Gustas / Clevers / Hotel Garden</td>
+            <td>Cafe Colonial, Sacramento, CA</td>
+          </tr>
+          <tr class="event-row">
+            <td>TBA</td>
+            <td>TBA</td>
+            <td>TBA</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2 class="about-us-custom about-title">ABOUT US</h2>
+    <div class="about-section-container grid container">
+      <img src="images/2022-10-15_18_34_23.489.jpg" alt="band photo" class="about-us-img hidden" loading="lazy" />
+      <div class="about-us-content about-us-custom hidden">
+        <h2 class="about-us-custom mobile-about-title hidden">ABOUT US</h2>
+        <p class="hidden about-us-custom about-us-text">
+          Hotel Garden is a Sacramento based Indie Rock band that met through
+          a chance encounter on Craigslist. Their musical style draws
+          inspiration from artists such as Peach Pit, Turnover, and The
+          Backseat Lovers. With each show, the band strives to connect with
+          audiences through their music and create a memorable experience.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="form">
+    <h2 class="form-title">CONTACT US</h2>
+    <form id="my-form" action="https://formspree.io/f/xoqbjjkk" method="POST">
+      <!-- Grid -->
+      <div class="grid">
+        <!-- Markup example 1: input is inside label -->
+        <label for="name">
+          Name
+          <input type="text" id="name" name="name" placeholder="Name" required />
+        </label>
+      </div>
+
+      <!-- Markup example 2: input is after label -->
+      <label for="email">Email address</label>
+      <input type="email" id="email" name="email" placeholder="Email address" required />
+
+      <!-- textbox -->
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Message" required></textarea>
+      <!-- Button -->
+      <button class="btn" type="submit" id="my-form-button">Submit</button>
+      <p id="my-form-status"></p>
+    </form>
+  </section>
+
+  <footer class="footer-container">
+    <nav class="footer-nav">
+      <ul>
+        <li class="footer__item">
+          <a class="footer-link social-list__item" href="http://instagram.com/_u/hotelgardenband?igshid=YmMyMTA2M2Y="
+            aria-label="Instagram"><i class="fa-brands fa-instagram footer-icon"></i></a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.tiktok.com/@hotelgardenband" aria-label="TikTok"><i
+              class="fa-brands fa-tiktok footer-icon"></i>
+          </a>
+        </li>
+        <li class="footer__item">
+          <a class="footer-link social-list__item"
+            href="https://open.spotify.com/artist/33YRDb38CEI0aA2TS5csdx?si=1uYMovQbQpG7uSgqTJB5-g"
+            aria-label="Spotify"><i class="fa-brands fa-spotify footer-icon"></i></a>
+        </li>
+        <li class="footer__item">
+          <a class="footer-link social-list__item" href="https://music.apple.com/us/artist/hotel-garden/1648459007"
+            aria-label="Apple Music">
+            <i class="fa-brands fa-apple footer-icon"></i></a>
+        </li>
+        <li class="footer__item">
+          <a href="https://www.youtube.com/channel/UCLW6HCmYLTbe_Je8Q63-PMQ" aria-label="YouTube">
+            <i class="fa-brands fa-youtube footer-icon"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="band__footer-container">
+      <p class="credits"><a href="#home">Hotel Garden</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
