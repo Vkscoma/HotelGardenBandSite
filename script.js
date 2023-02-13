@@ -94,21 +94,6 @@ eventRow.forEach((row) => {
   });
 });
 
-// JS for Article Photos
-// Select each article elements
-const articles = document.querySelectorAll(".article");
-
-// Loop through each article and add an animation when hovered
-articles.forEach(function (article) {
-  article.addEventListener("mouseenter", function () {
-    article.style.transform = "scale(1.2)";
-    article.style.zIndex = "5";
-  });
-  article.addEventListener("mouseleave", function () {
-    article.style.transform = "scale(1)";
-  });
-});
-
 // Photo Gallery
 const hero = document.querySelector(".hero");
 const images = document.querySelectorAll(".hero-image:not(.mobile)");
@@ -116,21 +101,25 @@ const mobileImages = document.querySelectorAll(".hero-image.mobile");
 let heroIndex = 0;
 
 function swapImage() {
-  for (let i = 0; i < images.length; i++) {
-    images[i].classList.remove("active");
+  if (window.innerWidth > 768) {
+    for (let i = 0; i < images.length; i++) {
+      images[i].classList.remove("active");
+    }
+    images[heroIndex].classList.add("active");
+    heroIndex = (heroIndex + 1) % images.length;
   }
-  images[heroIndex].classList.add("active");
-  heroIndex = (heroIndex + 1) % images.length;
 }
 
 let mobileIndex = 0;
 
 function swapMobileImages() {
-  for (let i = 0; i < mobileImages.length; i++) {
-    mobileImages[i].classList.remove("active");
+  if (window.innerWidth < 768) {
+    for (let i = 0; i < mobileImages.length; i++) {
+      mobileImages[i].classList.remove("active");
+    }
+    mobileImages[mobileIndex].classList.add("active");
+    mobileIndex = (mobileIndex + 1) % mobileImages.length;
   }
-  mobileImages[mobileIndex].classList.add("active");
-  mobileIndex = (mobileIndex + 1) % mobileImages.length;
 }
 
 setInterval(swapImage, 5000);
