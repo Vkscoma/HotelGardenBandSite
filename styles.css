@@ -230,6 +230,7 @@ body>header>nav>ul {
 .event-row {
   transition: all 0.2s ease-in-out;
   height: 120px;
+  border-bottom: 2px solid;
 }
 
 .event-row:hover {
