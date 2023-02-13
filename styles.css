@@ -486,6 +486,8 @@ div.g-recaptcha {
 
   .hero-image.mobile {
     display: block;
+    max-width: 760px;
+    max-height: 950px;
   }
 
   .hero::after {
@@ -563,4 +565,14 @@ div.g-recaptcha {
   .footer-container {
     padding: 10px;
   }
+}
+
+@media screen and (max-width: 480px) {
+
+  .hero-image.mobile {
+    display: block;
+    max-width: 480px;
+    max-height: 850px;
+  }
+
 }
