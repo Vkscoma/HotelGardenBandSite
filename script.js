@@ -4,10 +4,12 @@ const hamburgerIcon = document.getElementById("hamburger");
 const xIcon = document.getElementById("x-icon");
 const navLinks = document.querySelectorAll(".nav__link");
 const hiddenElements = document.querySelectorAll(".hidden");
+const mobileNavFix = document.querySelector(".nav-container");
 
 //event listener
 navToggle.addEventListener("click", () => {
   document.body.classList.toggle("nav-open");
+  mobileNavFix.classList.remove("opacity-mobile-class");
 
   if (xIcon.style.display === "none") {
     hamburgerIcon.style.display = "none";

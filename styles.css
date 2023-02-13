@@ -415,6 +415,10 @@ div.g-recaptcha {
     z-index: 1000;
   }
 
+  .opacity-mobile-class {
+    opacity: 0;
+  }
+
   .mobile-h1 {
     margin: 0;
     font-family: var(--secondary-font);
