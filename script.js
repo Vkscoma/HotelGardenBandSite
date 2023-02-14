@@ -95,34 +95,3 @@ eventRow.forEach((row) => {
     }
   });
 });
-
-// Photo Gallery
-const hero = document.querySelector(".hero");
-const images = document.querySelectorAll(".hero-image:not(.mobile)");
-const mobileImages = document.querySelectorAll(".hero-image.mobile");
-let heroIndex = 0;
-
-function swapImage() {
-  if (window.innerWidth > 768) {
-    for (let i = 0; i < images.length; i++) {
-      images[i].classList.remove("active");
-    }
-    images[heroIndex].classList.add("active");
-    heroIndex = (heroIndex + 1) % images.length;
-  }
-}
-
-let mobileIndex = 0;
-
-function swapMobileImages() {
-  if (window.innerWidth < 768) {
-    for (let i = 0; i < mobileImages.length; i++) {
-      mobileImages[i].classList.remove("active");
-    }
-    mobileImages[mobileIndex].classList.add("active");
-    mobileIndex = (mobileIndex + 1) % mobileImages.length;
-  }
-}
-
-setInterval(swapImage, 5000);
-setInterval(swapMobileImages, 5000);
