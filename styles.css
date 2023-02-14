@@ -101,8 +101,9 @@ body>header>nav>ul {
 
 .hero-image {
   position: absolute;
+  visibility: hidden;
   opacity: 0;
-  transition: opacity 1s ease-in-out;
+  transition: all 2s ease-in-out;
   z-index: -1;
   object-fit: cover;
   object-position: center;
@@ -123,19 +124,20 @@ body>header>nav>ul {
 
 .hero-image.active {
   opacity: 1;
+  visibility: visible;
 }
 
 .main-title {
   font-family: var(--secondary-font);
-  font-size: 4.5rem;
+  font-size: 150px;
   font-weight: 700;
-  color: var(--light-color);
-  text-shadow: 0 0 10px #000;
+  color: rgb(255 254 254 / 52%);
+  text-shadow: 0 0 30px #ffffff78;
   text-align: center;
   margin: 0;
   transition: 1s;
-  animation: moveBandLogo 1500ms ease-in;
-  padding-top: 200px;
+  animation: moveBandLogo 3000ms ease-in;
+  padding-top: 150px;
 }
 
 /* Music Section */
@@ -385,11 +387,13 @@ div.g-recaptcha {
   0% {
     filter: blur(5px);
     opacity: 0;
+    transform: translateY(-100%);
   }
 
   100% {
     filter: blur(0);
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -499,6 +503,8 @@ div.g-recaptcha {
     padding: 20px;
     position: relative;
     top: 40px;
+    color: #fff;
+    text-shadow: 0 0 10px #ffffff78;
   }
 
   /* about section */
