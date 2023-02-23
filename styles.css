@@ -598,10 +598,6 @@ div.g-recaptcha {
 }
 
 @media screen and (max-width: 768px) {
-  body {
-    background-color: #000;
-  }
-
   .rm-main-container {
     width: 100%;
     height: 100vh;
