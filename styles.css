@@ -93,6 +93,11 @@ body>header>nav>ul {
   overflow: hidden;
   transition: 1s;
   z-index: 1;
+  background-image: url('desktop-images/desktopimg-1.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero-image.mobile {
@@ -156,6 +161,10 @@ body>header>nav>ul {
 
 .music-title {
   margin-bottom: 0.5em;
+}
+
+.iframe-player {
+  max-width: 750px;
 }
 
 .gradient-border {
@@ -467,8 +476,8 @@ div.g-recaptcha {
   }
 
   /* hero section */
-  .hero-image {
-    display: none;
+  .hero {
+    background: none;
   }
 
   .hero-image.mobile {
