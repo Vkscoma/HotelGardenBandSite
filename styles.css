@@ -235,17 +235,21 @@ body>header>nav>ul {
   font-size: 2rem;
   font-weight: 600;
   text-align: center;
+  color: var(--light-color);
 }
 
-.event-row {
-  transition: all 0.2s ease-in-out;
-  height: 120px;
-  border-bottom: 2px solid;
+.shows-section {
+  background: #172739;
+  padding: 5em 0;
 }
 
-.event-row:hover {
-  cursor: pointer;
-  background-color: var(--transparent-lighter-color);
+.shows-container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+div#powered {
+  display: none !important;
 }
 
 /* About Us Styling */
@@ -544,6 +548,11 @@ div.g-recaptcha {
 
   .music-list li a {
     font-size: 4rem;
+  }
+
+  /* shows section */
+  .shows-section {
+    margin: 0;
   }
 
   .shows-title {
