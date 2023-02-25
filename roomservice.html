@@ -7,28 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <style>
-        html,
-        body {
-            overflow: hidden;
-        }
-
         body {
             background-color: #181d25;
-            background-image: url(desktop-images/roomserviceBackground.webp);
+            background-image: url(desktop-images/roomserviceBackground.jpg);
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-        }
-
-        body::after {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: -1;
         }
     </style>
     <title>Room Service</title>
@@ -39,7 +23,14 @@
         <div class="rm-h1-container">
             <h1 class="room-service-h1">COMING SOON</h1>
         </div>
-        <button onClick="goBackToSite()" class="rm-button">Back to Site</button>
+        <button onClick="goBackToSite()" class="rm-button">Enter Site</button>
+        <div class="iframe-container">
+            <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/artist/33YRDb38CEI0aA2TS5csdx?utm_source=generator&theme=0"
+                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
     </main>
     <script>
         function goBackToSite() {

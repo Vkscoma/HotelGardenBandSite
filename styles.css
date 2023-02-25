@@ -575,8 +575,8 @@ div.g-recaptcha {
   justify-content: center;
   align-items: center;
   margin: 0;
-  padding-top: 300px;
-  padding-bottom: 300px;
+  padding-top: 200px;
+  padding-bottom: 200px;
   gap: 4em;
 }
 
@@ -606,6 +606,11 @@ div.g-recaptcha {
   color: var(--dark-grey);
 }
 
+.iframe-container {
+  width: 100%;
+  max-width: 850px;
+}
+
 @media screen and (max-width: 768px) {
   .rm-main-container {
     width: 100%;
@@ -622,7 +627,4 @@ div.g-recaptcha {
     left: 100px;
     bottom: 200px;
   }
-
-
-
 }
