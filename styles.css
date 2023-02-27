@@ -236,10 +236,11 @@ body>header>nav>ul {
   font-weight: 600;
   text-align: center;
   color: var(--light-color);
+  text-shadow: 3px 3px var(--dark-color);
 }
 
 .shows-section {
-  background: #172739;
+  background-image: linear-gradient(to right top, #f8c2e1, #edb7de, #e0addc, #d1a4da, #c19bd9, #b49ee1, #a4a1e7, #92a4ec, #7eb2f7, #6ac0fe, #58cdff, #4ed9ff);
   padding: 5em 0;
 }
 
