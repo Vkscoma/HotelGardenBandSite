@@ -167,27 +167,6 @@ body>header>nav>ul {
   max-width: 750px;
 }
 
-.gradient-border {
-  padding: 1em;
-  width: 100%;
-  max-width: 450px;
-  border-style: solid;
-  border-width: 10px;
-  border-image: linear-gradient(to right,
-      #49c4e6,
-      #40bcde,
-      #36b5d6,
-      #2badcf,
-      #1ea6c7,
-      #16a1c4,
-      #0c9cc0,
-      #0097bd,
-      #0094bd,
-      #0090bc,
-      #008dbc,
-      #0089bb) 1;
-}
-
 .music-list-title {
   margin-bottom: 0;
 }
