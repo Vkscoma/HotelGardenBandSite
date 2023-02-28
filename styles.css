@@ -512,7 +512,7 @@ div.g-recaptcha {
 
   /* about section */
   .about-section-container {
-    background: url(images/2022-10-15_18_34_23.489.jpg);
+    background: url(images/about-us-background.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -559,6 +559,10 @@ div.g-recaptcha {
   /* shows section */
   .shows-section {
     margin: 0;
+  }
+
+  .seated-event-link1 {
+    margin-left: 0 !important;
   }
 
   .shows-title {
