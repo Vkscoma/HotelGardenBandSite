@@ -256,8 +256,11 @@ body>header>nav>ul {
 }
 
 .about-us-img {
-  border-radius: 5px;
-  width: 100%;
+  border-radius: 50%;
+  width: 450px;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
 }
 
 .about-us-content {
@@ -292,6 +295,11 @@ body>header>nav>ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+form {
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .form-title {
@@ -376,6 +384,18 @@ div.g-recaptcha {
 
 .band__footer-container a:hover {
   color: var(--main-color-accent);
+}
+
+.credits {
+  margin-bottom: .5em;
+}
+
+.mail--link a {
+  font-size: .9rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--light-color);
+  text-align: center;
 }
 
 /* Observer animation styling */
