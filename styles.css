@@ -74,8 +74,8 @@ body {
   justify-content: space-evenly;
 }
 
-body>header>nav>ul {
-  gap: 3em;
+.social--links--nav {
+  margin-left: 1em !important;
 }
 
 .nav-container a {
@@ -485,6 +485,10 @@ div.g-recaptcha {
 
   body>header>nav>ul {
     gap: 0;
+  }
+
+  .social--links--nav {
+    margin-left: 0 !important;
   }
 
   .nav-container,
