@@ -62,7 +62,7 @@ async function handleSubmit(event) {
   })
     .then((response) => {
       if (response.ok && honeyPot.value === "") {
-        status.innerHTML = "Thanks for your submission!";
+        status.textContent = "Thanks for your submission!";
         status.classList.add("success");
         form.reset();
       } else if (honeyPot.value !== "") {
