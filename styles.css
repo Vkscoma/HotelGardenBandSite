@@ -85,6 +85,12 @@ body {
   font-weight: 600;
 }
 
+li .nav__link {
+  font-size: .82rem;
+  font-weight: 300;
+  margin-right: .5em;
+}
+
 .nav-container a:hover {
   color: var(--main-color-accent);
 }
@@ -485,6 +491,11 @@ div.g-recaptcha {
 
   body>header>nav>ul {
     gap: 0;
+  }
+
+  li .nav__link {
+    font-weight: 600;
+    margin-right: 0;
   }
 
   .social--links--nav {
